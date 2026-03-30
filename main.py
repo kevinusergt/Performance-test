@@ -139,11 +139,11 @@ while option < 6:
                                                 if New_Id_User == 0 or New_Id_User < 0:
                                                     New_Id_User = 0
                                                     print('ID is not valid')
-                                                elif New_Id_User == any(stud['ID'] == New_Id_User for stud in students):
+                                                elif any(stud['ID'] == New_Id_User for stud in students):
                                                     New_Id_User = 0
                                                     print('ID already exist') 
                                             elif Replace == 'N':
-                                                New_Id_User = Id_User
+                                                New_Id_User = student['ID']
                                             else:
                                                 print('S or N')    
                                     except ValueError:#except this problem
@@ -160,7 +160,7 @@ while option < 6:
                                                     New_Age = 0
                                                     print('Age is not valid')
                                             elif Replace_age == 'N':
-                                                New_Age = Age
+                                                New_Age = student['Age']
                                             else:
                                                 print('S or N')   
                                     
