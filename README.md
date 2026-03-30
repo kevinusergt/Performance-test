@@ -28,6 +28,7 @@ This is a python program which allows managing the information of enrolled stude
 
 ## Example of use
 to add.
+
 ``` 
 ---MAIN MENU---
 
@@ -46,6 +47,7 @@ Is the student activated? (S/N): s
 Student has been added
 ```
 to view.
+
 ```
 ---MAIN MENU---
 
